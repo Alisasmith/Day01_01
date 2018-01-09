@@ -29,12 +29,14 @@ import copy
 
 # ===========================List===========================
 a = [10,20,30,40,50,60,70,80,90]  # list声明并赋值
-print(id(a))
+# print(id(a))
 # 列表循环遍历
 # for b in a:
 #     print(b)
 # a[2] = 33
+# print(type(a))
 # a.append(77) # 像列表的末尾添加一个元素
+# print(a)
 # a.pop(2) # list.pop([index])删除指定索引位置元素，不传的话，默认删除最后一个
 # a.insert(2,333) # list.insert(index, ele) 把元素 ele 插入到指定的 index 位置。原来的元素会自动右移动
 
@@ -73,16 +75,48 @@ print(id(a))
 # e = c+d
 # e_new = e[:]
 # print(e_new)
-names = ["小明", "小红", "小黑", ["粉色"], "小黄", "小白"]
+# names = ["小明", "小红", "小黑", ["粉色"], "小黄", "小白"]
 # 深复制
-deep_names = copy.deepcopy(names)
-print(deep_names)
+# deep_names = copy.deepcopy(names)
+# print(deep_names)
 # 修改粉色为 Pink
-names[3][0] = "Pink"
+# names[3][0] = "Pink"
 # 分别打印输出两个列表
-print(names)
-print(deep_names)
+# print(names)
+# print(deep_names)
+# range 的使用方法
+# num = list(range(10)) # python3中range()函数返回的是一个整数序列的对象，而不是列表，所以需要用list()函数返回列表
+# print(type(num))
+# 求一个列表的三次方
+# num = []
+# num = [pow(x,3) for x in range(10)]
+# print(num)
 
+# nums = []
+# for x in range(10):
+#     nums.append(pow(x,3))
+# print(nums)
+# nums = [pow(x, 2) for x in range(20) if x % 2 == 0]
+# print(nums)
+
+# 求奇数的平方
+# nums = [pow(x, 2) for x in range(20) if x % 2==1]
+# print(nums)
+
+# for嵌套
+# s1 = [1, 2, 3, 4, 5, 6]
+# s2 = ['a', 'b', 'c']
+# s3 = [str(x) + y for x in s1 for y in s2]
+# print(s3)
+# tuple 元组
+t = (12, 23, 34, 45, 56, 67)
+
+print(t[1])
+
+d = dict([('one', 1), ('two', 2), ('three', 3)])
+
+d['one'] = 1111111
+print(d['one'])
 
 
 
