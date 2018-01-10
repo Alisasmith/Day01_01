@@ -1,10 +1,9 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2018/1/8 11:52
+# @Time    : 2018/1/10 11:20
 # @Author  : ZhaoMeifeng
 # @Email   : Alisasmith@126.com
-# @File    : HelloWorld.py
+# @File    : StringListTupleDic.py
 # @Software: PyCharm
-
 import copy
 # name = input("请输入你姓名：")
 # age = int(input("请输入你的年龄："))
@@ -157,10 +156,3 @@ dict6 = {
 }
 print(sorted(dict6)) # sorted(字典) 排序字典的key值
 print(dict6.values()) # 获取dict6中所有的值
-
-
-
-
-
-
-
