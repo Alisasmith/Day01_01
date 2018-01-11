@@ -149,15 +149,16 @@ s1 = "指数(基底写为e)"
 #         print('别太着急了，再等几年哦！！！')
 # else:
 #     print('您输入的年龄不合法，请问您是外星人吗！！！')
-a = 3
-b = 2
-
-res1 = a * 2 > a % b and a // b != a // a   # False
-res2 = a * b % a < b or (a + 3) // 2 < b    # True
-res3 = b // a != a ** 1 and a % b <= b % a and b < a   # True
-res4 = b // a != a ** 1 or a % b <= b % a or b < a   # True
-
-print(res1, res2, res3, res4)
+# a = 3
+# b = 2
+#
+# res1 = a * 2 > a % b and a // b != a // a   # False
+# res2 = a * b % a < b or (a + 3) // 2 < b    # True
+# res3 = b // a != a ** 1 and a % b <= b % a and b < a   # True
+# res4 = b // a != a ** 1 or a % b <= b % a or b < a   # True
+#
+# print(res1, res2, res3, res4)
+# 每满100-20
 
 
 
