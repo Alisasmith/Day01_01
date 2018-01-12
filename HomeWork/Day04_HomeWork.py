@@ -45,15 +45,18 @@ import random
 #         b += 1
 #
 #     a += 1
-#     print('不包含4的数字的个数为%d：'% a_count)
+# print('不包含4的数字的个数为%d：'% a_count)
 #  7.某数学竞赛中，参赛人数大约在380-450之间。
 #  比赛结果，全体考生的总平均分为76分，男生的平均分为75，女生的平均分为80.1，求男女生各有多少人。
-# TODO:未实现
-# a = 380
-# while a <= 450:
-#
-#
-#     a += 1
+# i = 380  # 总人数
+# while i <= 450:
+#     x = 1  # 男生人数
+#     while x < i-1:
+#         y = i - x
+#         if x*75 + y*80.1 == i*76:
+#             print('总人数为：%d，男生人数为：%d，女生人数为%d'%(i, x, y))
+#         x += 1
+#     i += 1
 
 # 8.有一个两位数，如果在它的前面添加一个3，可以得到一个三位数，
 # 把3添加在它的后面，也可以得到一个三位数。这两个三位数相差468，求原来的两位数。
@@ -182,14 +185,12 @@ import random
 sys_num = random.randint(1,3)
 print(sys_num)
 int_input = int(input('请输入1.剪刀,2.石头,3.布'))
-while True:
-    if sys_num == int_input :
-        print('平局，请继续。。。')
-    else:
-        if sys_num > int_input:
-            if sys_num ==1:
-                print('系统赢')
-        else:
-            print('玩家赢')
-
-    break
+list_guess = ['剪刀', '石头', '布']
+if int_input == sys_num == 1 or int_input == sys_num == 2 or int_input == sys_num == 3:
+    print(list_guess[sys_num - 1])
+if (sys_num == 1 and int_input ==2) or (sys_num == 2 and int_input == 3) or (sys_num == 3 and int_input == 1):
+    print('用户赢，系统出拳为：'+str(list_guess[sys_num-1])+'，用户出拳为：'+str(list_guess[int_input-1]))
+elif (sys_num == 1 and int_input ==3) or (sys_num == 2 and int_input == 1) or (sys_num == 3 and int_input ==2 ):
+    print('系统赢，系统出拳为：'+str(list_guess[sys_num-1])+'，用户出拳为：'+str(list_guess[int_input-1]))
+elif (int_input == sys_num ==1) or (int_input==sys_num==2) or (int_input==sys_num==3):
+    print('平局')
